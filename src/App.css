@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.d-flex {
   display: flex;
+}
+
+.flex-col {
   flex-direction: column;
+}
+
+.space-btw {
+  justify-content: space-between;
+}
+
+.items-center {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.grow-1 {
+  flex: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  padding: 0.5em;
+  margin: 0.2em;
+}
+
+.shop {
+  border-right: 3px solid darkgrey;
+  border-bottom: 3px solid darkgrey;
+}
+
+.shop-top > h2 {
+  border: 3px solid darkgrey;
+  border-right: none;
+  padding: 1em;
+  height: 30px;
+}
+
+.shop-top > h2:hover {
+  cursor: pointer;
+  background: #eee;
+}
+
+.inventory {
+  border-bottom: 3px solid darkgrey;
+}
+
+.gold {
+  padding: 1em;
+  height: 100px;
+}
+
+.gold > h2 {
+  border-left: none;
+  padding: 1em;
+}
+
+.item {
+  border: 1px solid darkgrey;
+  margin: 0.4em;
+}
+
+.effect {
+  width: fit-content;
+  height: fit-content;
+  border: 1px solid darkgrey;
+  padding: 0.1em;
+  margin: 0.1em;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  font-size: 2em;
 }
